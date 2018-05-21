@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+<!-- Extension of layout.html; contains CSS/JS/Bootstrap file references -->
+{% block title %}
+<title> Menu </title>
+{% endblock %}
+{% block body %}
+<div class = "container cent">
+    <div class = "row">
+        <div class = "col-md-12">
+            <span class = "h1 space">Menu</span>
+        </div>
+    </div>
+    <!-- Links to each of the other pages -->
+    <div class = "row">
+        <div class = "col-md-12">
+            <a href = "{{ url_for('index')}}" class = "menulink h3"> Home </a>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-12">
+            <a href = "{{ url_for('cv')}}" class = "menulink h3"> CV </a>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-12">
+            <a href = "{{ url_for('contact')}}" class = "menulink h3"> Contact </a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

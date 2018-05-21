@@ -1,0 +1,156 @@
+{% extends "layout.html" %}
+<!-- Extension of layout.html; contains CSS/JS/Bootstrap file references -->
+{% block title %}
+<title> Personal Portfolio</title>
+{% endblock %}
+
+{% block body %}
+
+<!-- Header to contain two styles to emphasise part of it. -->
+<div class = "container">
+    <div class = "row header">
+        <div class = "col-md-12 col-lg-12">
+            <span class = "h1">A VISUAL PORTFOLIO OF </span>
+            <span class="h2">everything</span>
+        </div>
+    </div>
+</div>
+
+<!-- Grid of alternating alignments. Pictures and descriptions of future sections. -->
+<div class = "container space">
+    <div class = "row">
+        <div class = "col-md-6 col-lg-6">
+            <h3 class = "right">
+                Graphic Design
+            </h3>
+            <p class = "right">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                dolor in hendrerit in vulputate velit esse molestie consequat,
+                vel illum dolore eu feugiat nulla facilisis at vero eros et
+                accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi.
+                Nam liber tempor cum soluta nobis eleifend option congue
+                nihil imperdiet doming id quod mazim placerat facer possim
+                assum. Typi non habent claritatem insitam; est usus legentis
+                in iis qui facit eorum claritatem. Investigationes
+                demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+                quam nunc putamus parum claram, anteposuerit litterarum formas
+                humanitatis per seacula quarta decima et quinta decima. Eodem
+                modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+                in futurum.
+            </p>
+        </div>
+        <div class = "col-md-6 col-lg-6">
+            <img src="{{ url_for('static', filename='design.jpg') }}" height = 400px></img>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-offset-12"></div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-6 col-lg-6">
+            <img src="{{ url_for('static', filename='photo.jpg') }}" align = "right" height = 400px></img>
+        </div>
+        <div class = "col-md-6 col-lg-6">
+            <h3 class = "left">
+                Photography
+            </h3>
+            <p class = "left">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                dolor in hendrerit in vulputate velit esse molestie consequat,
+                vel illum dolore eu feugiat nulla facilisis at vero eros et
+                accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi.
+                Nam liber tempor cum soluta nobis eleifend option congue
+                nihil imperdiet doming id quod mazim placerat facer possim
+                assum. Typi non habent claritatem insitam; est usus legentis
+                in iis qui facit eorum claritatem. Investigationes
+                demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+                quam nunc putamus parum claram, anteposuerit litterarum formas
+                humanitatis per seacula quarta decima et quinta decima. Eodem
+                modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+                in futurum.
+            </p>
+        </div>
+        
+    </div>
+    <div class = "row">
+        <div class = "col-md-6 col-lg-6">
+            <h3 class = "right">
+                Crafts
+            </h3>
+            <p class = "right">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                dolor in hendrerit in vulputate velit esse molestie consequat,
+                vel illum dolore eu feugiat nulla facilisis at vero eros et
+                accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi.
+                Nam liber tempor cum soluta nobis eleifend option congue
+                nihil imperdiet doming id quod mazim placerat facer possim
+                assum. Typi non habent claritatem insitam; est usus legentis
+                in iis qui facit eorum claritatem. Investigationes
+                demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+                quam nunc putamus parum claram, anteposuerit litterarum formas
+                humanitatis per seacula quarta decima et quinta decima. Eodem
+                modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+                in futurum.
+            </p>
+        </div>
+        <div class = "col-md-6 col-lg-6">
+            <img src="{{ url_for('static', filename='craft.jpg') }}" height = 400px></img>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-6 col-lg-6">
+            <img src="{{ url_for('static', filename='work.jpg') }}" align = "right" height = 400px></img>
+        </div>
+        <div class = "col-md-6 col-lg-6">
+            <h3 class = "left">
+                CV
+            </h3>
+            <p class = "left">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                dolor in hendrerit in vulputate velit esse molestie consequat,
+                vel illum dolore eu feugiat nulla facilisis at vero eros et
+                accumsan et iusto odio dignissim qui blandit praesent luptatum
+                zzril delenit augue duis dolore te feugait nulla facilisi.
+                Nam liber tempor cum soluta nobis eleifend option congue
+                nihil imperdiet doming id quod mazim placerat facer possim
+                assum. Typi non habent claritatem insitam; est usus legentis
+                in iis qui facit eorum claritatem. Investigationes
+                demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+                quam nunc putamus parum claram, anteposuerit litterarum formas
+                humanitatis per seacula quarta decima et quinta decima. Eodem
+                modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+                in futurum.
+            </p>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}

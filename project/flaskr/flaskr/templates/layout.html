@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Basic HTML file setup as needs to be repeated in each HTML file-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <!-- Allows differing titles on each page -->
+    {% block title %}{%endblock%}
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" type="text/css">
+    
+    <!-- CSS file containing custom styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" type="text/css">
+
+
+  </head>
+  
+  
+  
+  <body>
+  <!-- Menu icon on each pages -->
+    <a href = "{{ url_for('menu')}}">
+      <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+    </a>
+    
+    <!-- Main body of each page -->
+    {% block body %}{% endblock %}
+    
+    
+
+
+    <!-- jQuery (bootstrap req.) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- JS files -->
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src= "{{ url_for('static', filename='scripts.js') }}"></script>
+  </body>
+</html>

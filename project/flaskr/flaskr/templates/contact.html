@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+<!-- Extension of layout.html; contains CSS/JS/Bootstrap file references -->
+{% block title %}
+<title> Contact</title>
+{% endblock %}
+{% block body %}
+<!-- Bootstrap form; uses checkFields() for validation; linked to scripts.js -->
+<div class = "container">
+    <form name = "formName" onsubmit="return checkFields()">
+        <div class="form-group" >
+            <label for="inputName">Name</label>
+            <input type="name" class="form-control" id="inputName" placeholder="Name" name = "inputName">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name = "inputEmail">
+        </div>
+        <!-- Uses rows to show space for a longer text entry -->
+        <div class = "form-group">
+            <label for="inputMes">Message</label>
+            <textarea class="form-control" rows="3" id = "inputMes" placeholder = "Write your message here" name = "inputMes"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Send</button>
+    </form>
+</div>
+
+
+{% endblock %}

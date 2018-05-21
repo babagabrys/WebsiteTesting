@@ -1,0 +1,53 @@
+.h1 {
+    font-family: "Arial";
+    font-size: 50px;
+    text-align: center;
+}
+
+.h2 {
+    font-family: "Lucida Console";
+    font-size:45px;
+}
+
+
+body {
+    background-color: #e6fff7;
+}
+
+.glyphicon.glyphicon-menu-hamburger {
+    font-size: xx-large; 
+    color: black;
+    position: fixed;
+}
+
+.header {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+}
+
+.cent{
+    text-align: center;
+}
+.space{
+    margin-bottom: 30px;
+}
+
+.menulink{
+    color: black;
+}
+
+.cvheader {
+    text-align: right;
+    border-width: 2px;
+    border-right-color: black;
+    border-right-style: solid;
+    
+}
